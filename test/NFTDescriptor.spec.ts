@@ -338,7 +338,7 @@ describe('NFTDescriptor', () => {
       fee = FeeAmount.LOW
       quoteTokenAddress = '0xabcdeabcdefabcdefabcdefabcdefabcdefabcdf'
       baseTokenAddress = '0x1234567890123456789123456789012345678901'
-      quoteTokenSymbol = 'UNI'
+      quoteTokenSymbol = 'ARI'
       baseTokenSymbol = 'WETH'
       expect(
         await nftDescriptor.constructTokenURI({
@@ -814,7 +814,7 @@ describe('NFTDescriptor', () => {
       tokenId = 123
       quoteTokenAddress = '0x1234567890123456789123456789012345678901'
       baseTokenAddress = '0xabcdeabcdefabcdefabcdefabcdefabcdefabcdf'
-      quoteTokenSymbol = 'UNI'
+      quoteTokenSymbol = 'ARI'
       baseTokenSymbol = 'WETH'
       tickLower = -1000
       tickUpper = 2000
@@ -897,8 +897,8 @@ describe('NFTDescriptor', () => {
     quoteTokenSymbol = quoteTokenSymbol.replace(/"/gi, '"')
     baseTokenSymbol = baseTokenSymbol.replace(/"/gi, '"')
     return {
-      name: `Uniswap - ${feeTier} - ${quoteTokenSymbol}/${baseTokenSymbol} - ${prices}`,
-      description: `This NFT represents a liquidity position in a Uniswap V3 ${quoteTokenSymbol}-${baseTokenSymbol} pool. The owner of this NFT can modify or redeem the position.\n\
+      name: `Ariswap - ${feeTier} - ${quoteTokenSymbol}/${baseTokenSymbol} - ${prices}`,
+      description: `This NFT represents a liquidity position in a Ariswap V3 ${quoteTokenSymbol}-${baseTokenSymbol} pool. The owner of this NFT can modify or redeem the position.\n\
 \nPool Address: ${poolAddress}\n${quoteTokenSymbol} Address: ${quoteTokenAddress.toLowerCase()}\n${baseTokenSymbol} Address: ${baseTokenAddress.toLowerCase()}\n\
 Fee Tier: ${feeTier}\nToken ID: ${tokenId}\n\n⚠️ DISCLAIMER: Due diligence is imperative when assessing this NFT. Make sure token addresses match the expected tokens, as \
 token symbols may be imitated.`,
