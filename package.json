@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.4.2",
+  "version": "1.4.4",
   "homepage": "https://uniswap.org",
   "keywords": [
     "uniswap",
@@ -31,8 +31,8 @@
   "dependencies": {
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
     "@ariswap/lib": "^4.0.1-alpha",
-    "@ariswap/v2-core": "1.0.1",
-    "@ariswap/v3-core": "1.0.1",
+    "@ariswap/v2-core": "1.0.2",
+    "@ariswap/v3-core": "1.0.2",
     "base64-sol": "1.0.1",
     "hardhat-watcher": "^2.1.1"
   },
